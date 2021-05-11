@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<title>Thitis Spinner</title>
+<head>
+    <style>
+
+        body {
+            width: 1920px;
+            height: 1080px;
+            background: -webkit-gradient(linear, left top, left bottom, from(gold), to(aqua)) ;
+            background-size:fill;
+        }
+
+        .thitis_spinner {
+            transition: transform 10s;
+
+        }
+
+        .thitis_spinner:hover {
+            transform: rotate(19980deg);
+        }
+
+        .dance1 {
+           position: absolute;
+           top: 0px;
+           right: 0px;
+           border: 3px;
+        }
+
+        .spinner {
+            display: flex;
+            justify-content: center;
+        }
+        .dance2 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 3px;
+        }
+        .dance3{
+            position:absolute;
+            bottom: 0px;
+            left: 0px;
+            border: 3px;
+        }
+        .dance4{
+            position:absolute;
+            bottom: 0px;
+            right:0px;
+            border: 3px;
+        }
+        .mp3player{
+            position: absolute;
+            bottom:0px;
+            margin: 830px;
+            margin-bottom: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="dance1">
+        <img class="thitis_dance1" src="thitis1.gif" />
+    </div>
+    <div class="dance2">
+        <img class="thitis_dance2" src="thitis2.gif"/>
+    </div>
+    <div class="dance3">
+        <img class="thitis_dance3" src="thitis3.gif"/>
+    </div>
+    <div class="dance4">
+        <img class="thitis_dance4" src="thitis4.gif"/>
+    </div>
+    <div class="spinner">
+        <img class="thitis_spinner" style="width:250px; height:900px;" opacity=0.4;
+            src="https://vice-images.vice.com/images/content-images/2016/01/10/thitis-kanon-interview-body-image-1452451574.jpg?output-quality=75&resize=640:*" />
+    </div>
+
+    <audio controls class="mp3player">
+        <!-- Can be changed to notthitissong -->
+        <source src="thitissong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+
+</body>
+
+</html>
